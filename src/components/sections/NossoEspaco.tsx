@@ -78,7 +78,7 @@ export default function NossoEspaco() {
 
           <div
             ref={scrollRef}
-            className="flex-1 overflow-x-auto scrollbar-hide cursor-grab select-none lg:pt-28 pb-6 lg:ml-25"
+            className="flex-1 overflow-x-auto scrollbar-hide cursor-grab select-none pt-15 lg:pt-28 pb-6 lg:ml-25"
             style={{ paddingRight: "clamp(24px, 5.5vw, 56px)" }}
             onMouseDown={onMouseDown}
             onMouseLeave={onMouseLeave}
