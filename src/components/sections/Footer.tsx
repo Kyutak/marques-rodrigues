@@ -1,5 +1,5 @@
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-import logoPath from "@assets/image_1779377366776.png";
+import logoPath from "@assets/logo.jpg";
 
 export default function Footer() {
   return (
