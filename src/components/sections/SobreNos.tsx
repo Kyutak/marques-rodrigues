@@ -51,7 +51,7 @@ export default function SobreNos() {
               Vasconcelos, RJ, somos o espaço onde sonhos viram realidade.
             </p>
 
-            <div className="flex items-start gap-12 w-full pt-8 border-t border-white/10">
+            <div className="flex items-start gap-12 w-full pt-8 border-t border-white/10 hidden md:flex">
               <div>
                 <div className="font-giant text-[#C9A84C] text-[56px] mb-2">
                   200+

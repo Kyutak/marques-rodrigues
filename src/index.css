@@ -196,11 +196,16 @@
 }
 
 @layer base {
-  html {
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
     scroll-behavior: smooth;
   }
+
   * {
     @apply border-border;
+    box-sizing: border-box;
   }
 
   body {

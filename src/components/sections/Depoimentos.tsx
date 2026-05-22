@@ -49,7 +49,7 @@ export default function Depoimentos() {
         <span className="font-sans text-[#C9A84C] uppercase tracking-[0.22em] text-[11px] mb-4 font-semibold">
           EXPERIÊNCIAS REAIS
         </span>
-        <h2 className="font-giant text-[#111] text-[clamp(64px,10vw,140px)] mb-4 text-center">
+        <h2 className="font-giant text-[#111] text-[clamp(42px,12vw,140px)] mb-4 text-center">
           DEPOIMENTOS
         </h2>
         <p className="font-sans text-[#666] text-lg mb-16 text-center">
@@ -89,25 +89,17 @@ export default function Depoimentos() {
             </div>
           </div>
 
-          <div className="flex items-center justify-center gap-4 mt-12">
+          <div className="hidden md:flex items-center justify-between absolute top-1/2 -translate-y-1/2 left-0 right-0 px-[-24px] pointer-events-none">
             <button
               onClick={scrollPrev}
-              className="w-12 h-12 rounded-full border border-[#ddd] flex items-center justify-center text-[#111] hover:bg-[#111] hover:text-white transition-colors"
+              className="pointer-events-auto -ml-6 w-14 h-14 rounded-full bg-white border border-[#E8E8E8] flex items-center justify-center text-[#111] hover:bg-[#111] hover:text-white transition-all shadow-md"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
-            <div className="flex gap-2 mx-4">
-              {testimonials.map((_, i) => (
-                <button
-                  key={i}
-                  className={`w-2 h-2 rounded-full transition-all ${i === selectedIndex ? "bg-[#C9A84C] w-6" : "bg-[#ddd]"}`}
-                  onClick={() => emblaApi && emblaApi.scrollTo(i)}
-                />
-              ))}
-            </div>
+
             <button
               onClick={scrollNext}
-              className="w-12 h-12 rounded-full border border-[#ddd] flex items-center justify-center text-[#111] hover:bg-[#111] hover:text-white transition-colors"
+              className="pointer-events-auto -mr-6 w-14 h-14 rounded-full bg-white border border-[#E8E8E8] flex items-center justify-center text-[#111] hover:bg-[#111] hover:text-white transition-all shadow-md"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

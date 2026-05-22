@@ -62,7 +62,7 @@ export default function Eventos() {
               key={i}
               data-testid={`card-evento-${i}`}
               className="relative shrink-0 rounded-2xl overflow-hidden"
-              style={{ width: "clamp(240px, 26vw, 340px)", height: "clamp(340px, 46vw, 520px)" }}
+              style={{ width: "clamp(240px, 26vw, 340px)", height: "clamp(260px, 34vw, 420px)" }}
             >
               <img
                 src={evt.img}

@@ -55,14 +55,8 @@ export default function NossoEspaco() {
   return (
     <section id="espaco" className="bg-white overflow-hidden">
       <div className="pt-16 md:pt-24">
-        <div className="flex items-start min-h-[420px] md:min-h-[500px]">
-          <div
-            className="flex-shrink-0 flex flex-col justify-start pt-2 pointer-events-none select-none"
-            style={{
-              width: "clamp(220px, 28vw, 360px)",
-              paddingLeft: "clamp(24px, 5.5vw, 56px)",
-            }}
-          >
+        <div className="relative min-h-[420px] md:min-h-[500px] md:flex md:items-start">
+          <div className="relative z-10 flex flex-col justify-start pt-2 pointer-events-none select-none w-full px-6 md:w-auto md:flex-shrink-0">
             <h2 className="font-giant text-[#111] text-[clamp(56px,9vw,130px)]">
               ES
               <span className="font-script-deco" style={{ fontSize: "1.1em" }}>
@@ -70,7 +64,7 @@ export default function NossoEspaco() {
               </span>
               AÇOS
             </h2>
-            <p className="font-sans text-[#555] text-sm leading-relaxed mt-4 max-w-[200px]">
+            <p className="font-sans text-[#555] text-sm leading-relaxed mt-4 max-w-full md:max-w-[300px]">
               Presentes no melhor espaço de Senador Vasconcelos, somos
               referência na realização de celebrações na região.
             </p>
